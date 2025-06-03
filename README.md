@@ -45,14 +45,14 @@ Dataset yang digunakan dalam proyek ini adalah dataset dari instruksi submission
 
 #### Setup environment
 1. Menjalankan notebook.ipynb <br>
-   - File notebook.ipynb dapat dijalankan dalam visual studio atau IDE sejenis.
+   - File notebook.ipynb dapat dijalankan dalam visual studio code atau IDE sejenis.
    - Pastikan dependensi, paket, dan library yang dibutuhkan telah tersedia. Daftar dependensi lengkap dapat dilihat pada file 
      requirements.txt yang disediakan dalam proyek. <br>
    - Jalankan seluruh isi notebook.ipynb di Google Colab atau IDE sejenis.
      Ini akan menampilkan hasil analisis data, temuan, pemodelan untuk prediksi data, serta insight yang diperoleh dari eksplorasi dan pemodelan data.
 2. Menjalankan app.py <br>
    - Menjalankan app.py secara lokal:
-       - File app.py dapat dijalankan dalam visual studio atau IDE sejenis.
+       - File app.py dapat dijalankan dalam visual studio code atau IDE sejenis.
        - Pastikan semua dependensi sudah terinstal, terutama streamlit. Gunakan perintah berikut untuk instalasi jika belum:
           ```
           pip install -r requirements.txt
@@ -103,7 +103,7 @@ Beberapa faktor utama yang berpengaruh terhadap dropout siswa adalah:
 #### Prediksi Model
 Hasil model prediksi dapat langsung diakses di halaman [Prediksi Dropout Siswa](https://prediksi-dropout-daffaab.streamlit.app/).
 ##### Performa model
-Model yang digunakan menggunakan Model Gradient Boosting mneghasilkan akurasi 90.77%, dengan hasil prediksi sebagai berikut: <br>
+Model yang digunakan menggunakan Model Gradient Boosting menghasilkan akurasi 90.77%, dengan hasil prediksi sebagai berikut: <br>
 ![image](https://github.com/user-attachments/assets/bec89bc7-a7ce-4c87-b05f-4234f3940c74) <br>
 
 Model Gradient Boosting berhasil mengklasifikasikan dengan cukup baik, dengan 237 Dropout dan 422 Graduate yang terdeteksi benar, serta kesalahan prediksi yang relatif kecil, yaitu 40 Dropout salah diklasifikasikan sebagai Graduate dan 27 Graduate salah diklasifikasikan sebagai Dropout.
