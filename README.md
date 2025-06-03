@@ -51,17 +51,24 @@ Dataset yang digunakan dalam proyek ini adalah dataset dari instruksi submission
    - Jalankan seluruh isi notebook.ipynb di Google Colab atau IDE sejenis.
      Ini akan menampilkan hasil analisis data, temuan, pemodelan untuk prediksi data, serta insight yang diperoleh dari eksplorasi dan pemodelan data.
 2. Menjalankan app.py <br>
-   - File app.py dapat dijalankan dalam visual studio atau IDE sejenis.
-   - Pastikan semua dependensi sudah terinstal, terutama streamlit. Gunakan perintah berikut untuk instalasi jika belum:
-       ```
-        pip install -r requirements.txt
-        ```
-   - Pastikan file app.py, model.pkl, dan file dataset 'data_enrolled.csv' berada dalam folder/direktori yang sama.
-   - Jalankan aplikasi dashboard dengan perintah berikut di terminal atau command prompt:
-       ```
-       streamlit run app.py
-       ```
-    - Hasil prediksi serta dari model yang dikembangkan dalam proyek ini dapat langsung diakses di [Prediksi Dropout Siswa](https://prediksi-dropout-daffaab.streamlit.app/).
+   - Menjalankan app.py secara lokal:
+       - File app.py dapat dijalankan dalam visual studio atau IDE sejenis.
+       - Pastikan semua dependensi sudah terinstal, terutama streamlit. Gunakan perintah berikut untuk instalasi jika belum:
+          ```
+          pip install -r requirements.txt
+          ```
+       - Pastikan file app.py, model.pkl, dan file dataset 'data_enrolled.csv' berada dalam folder/direktori yang sama.
+       - Jalankan aplikasi dashboard dengan perintah berikut di terminal atau command prompt:
+          ```
+          streamlit run app.py
+          ```
+    - Menjalankan di streamlit cloud untuk dapat diakses secara publik, tahapannya:
+       - Persiapkan project: Memastikan kelengkapan project app.py, requirements.txt , model.pkl, serta dataset data_enrolled.csv.
+       - Upload ke GitHub: Push seluruh project ke repository GitHub dalam folder yang sama.
+       - Login ke Streamlit Cloud: Kunjungi streamlit.io dan login pakai akun GitHub.
+       - Deploy aplikasi: Klik "New app", pilih repo, branch, dan path app.py, lalu klik "Deploy".
+       - Buka dan bagikan link: Tunggu deploy selesai, aplikasi siap diakses lewat URL dari Streamlit Cloud.
+       - Hasil prediksi serta dari model yang dikembangkan dalam proyek ini melalui langkah-langkah di atas dapat langsung diakses di [Prediksi Dropout Siswa](https://prediksi-dropout-daffaab.streamlit.app/).
  3. Menjalankan Dashboard di Looker Studio
     - Menyiapkan data yang perlu digunakan yaitu dataset 'data_dropout_graduated.csv'
     - Buka looker studio (lookerstudio.google.com)
