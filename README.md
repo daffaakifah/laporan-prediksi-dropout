@@ -59,7 +59,7 @@ Dataset yang digunakan dalam proyek ini adalah dataset dari instruksi submission
    - Pastikan file prediksi.py, model.pkl, dan file dataset 'data_enrolled.csv' berada dalam folder/direktori yang sama.
    - Jalankan aplikasi dashboard dengan perintah berikut di terminal atau command prompt:
        ```
-       streamlit run prediksi.py
+       streamlit run app.py
        ```
     - Hasil prediksi serta dari model yang dikembangkan dalam proyek ini dapat langsung diakses di [Prediksi Dropout Siswa](https://prediksi-dropout-daffaab.streamlit.app/).
  3. Menjalankan Dashboard di Looker Studio
