@@ -67,72 +67,77 @@ Dataset yang digunakan dalam proyek ini adalah dataset dari instruksi submission
     - Buka looker studio (lookerstudio.google.com)
     - Upload dataset bisa digunakan dengan opsi pilihan Upload File CSV.
     - Pilih Visualisasi yang cocok dan sesuai dengan data.
-    - Dashboard yang sudah dibuat dengan langkah-langkah di atas dalam proyek ini dapat diakses [dashboard-dropout-graduate](https://lookerstudio.google.com/s/iHuorl7ojCU).
-    - Dashboard Looker Studio ini akan menjadi pusat monitoring real-time untuk HR Attrition berdasarkan data prediksi dan data historis.
+    - Dashboard yang sudah dibuat dengan langkah-langkah di atas dalam proyek ini dapat diakses [dashboard-dropout-graduate](https://lookerstudio.google.com/reporting/36b418df-6fd8-47ad-888b-99a3ea0d5259).
+    - Dashboard Looker Studio ini akan menjadi pusat monitoring real-time untuk Institusi berdasarkan data prediksi dan data historis.
 
 ## Business Dashboard
 #### Ringkasan Dashboard
-Dashboard ini menganalisis data dari 1.470 karyawan di Jaya Jaya Maju untuk mengidentifikasi faktor-faktor yang mempengaruhi tingkat attrition. Dari total tersebut, 14,5% karyawan (sekitar 213 orang) telah keluar dari perusahaan. Dashboard ini juga menampilkan berbagai metrik dan visualisasi yang membantu memahami pola attrition dan faktor risiko yang terkait. Dashboard dapat diakses pada link berikut [dashboard-proyek-hr](https://lookerstudio.google.com/reporting/36b418df-6fd8-47ad-888b-99a3ea0d5259).
+Dashboard ini memantau performa siswa Jaya Jaya Institut dengan fokus pada status kelulusan dan dropout. Dataset mencakup 3.630 siswa yang dianalisis berdasarkan berbagai indikator kunci. Dari total tersebut, 60.9% siswa lulus (graduate) dan 39.1% mengalami dropout. Dashboard menyediakan informasi visual yang menggambarkan perbedaan performa akademik, kepatuhan pembayaran, serta penerimaan beasiswa antara kelompok graduate dan dropout. Dashboard dapat diakses pada link berikut [dashboard-dropout-graduate](https://lookerstudio.google.com/reporting/36b418df-6fd8-47ad-888b-99a3ea0d5259)
 
-#### Faktor Utama Attrition
-Beberapa faktor utama yang berpengaruh signifikan terhadap attrition adalah:
-- Lembur (OverTime): Karyawan yang melakukan lembur memiliki risiko attrition yang lebih tinggi, menunjukkan adanya tekanan kerja yang berkontribusi pada keputusan keluar.
-- Pendapatan Bulanan (Monthly Income): Karyawan dengan pendapatan bulanan lebih rendah cenderung memiliki risiko keluar yang lebih tinggi.
-- Usia (Age): Rata-rata usia karyawan adalah 37 tahun, dengan kelompok usia muda hingga menengah lebih rentan mengalami attrition.
-- Tingkat Jabatan (Job Level) dan Kepuasan Kerja (Job Satisfaction) juga berperan penting dalam menentukan risiko attrition.
-- Status Pernikahan (Marital Status): Karyawan yang berstatus lajang (single) menunjukkan tingkat attrition yang lebih tinggi dibandingkan yang menikah atau bercerai.
+#### Faktor Utama Dropout
+Beberapa faktor utama yang berpengaruh terhadap dropout siswa adalah:
+- Tingkat Penyelesaian Tahun Pertama: Siswa yang menyelesaikan 90% unit kurikulum di tahun pertama berpeluang lulus, sedangkan yang hanya menyelesaikan sekitar 34% unit cenderung dropout.
+- Pembayaran Biaya Tepat Waktu: Siswa yang tepat waktu membayar biaya lebih besar kemungkinannya untuk lulus (graduate), sementara siswa yang terlambat atau tidak membayar tepat waktu cenderung mengalami dropout.
+- Rata-Rata Nilai Tahun Pertama: Siswa yang lulus memiliki nilai rata-rata di tahun pertama (semester 1 & 2) sebsesar (63,39), jauh lebih tinggi dibandingkan siswa yang dropout dengan rata-rata (38,95).
+- Penerima Beasiswa: Siswa yang menerima beasiswa memiliki tingkat kelulusan yang lebih tinggi dibandingkan yang tidak menerima beasiswa.
+- Jumlah Unit Kurikulum Tahun Pertama yang diterima: Siswa dengan jumlah unit kurikulum yang diterima pada tahun pertama yang sedikit memiliki kemungkinan untuk dropout.
 
-#### Distribusi dan Pola Karyawan Keluar
-- Kelompok Usia 25–35 tahun merupakan kelompok yang paling banyak mengalami attrition.
-- Status Pernikahan Single memiliki tingkat attrition tertinggi, yaitu sekitar 54,9%.
-- Karyawan yang melakukan lembur memiliki risiko lebih tinggi untuk keluar.
-- Karyawan dengan gaji bulanan di bawah rata-rata $4.643,62 juga lebih berisiko mengalami attrition.
+#### Distribusi dan Pola Siswa Dropout
+- Siswa yang lulus lebih sering membayar biaya tepat waktu dibanding siswa yang dropout.
+- Siswa dropout lebih banyak tidak membayar tepat waktu.
+- Penerima beasiswa memiliki peluang lebih besar untuk lulus.
+- Semakin tinggin tingkat penyelesaian unit kurikulum pada tahun pertama cenderung untuk lulus
 
-#### Job Role dan Risiko
-- Bidang pekerjaan dengan attrition tertinggi adalah posisi dengan tingkat jabatan rendah hingga menengah, terutama di level 1 dan 2.
-- Job Satisfaction dan Job Involvement yang rendah juga berkorelasi dengan tingkat attrition yang lebih tinggi.
-
-#### Tren Risiko
-- Semakin tinggi usia, pendapatan, dan lama bekerja di perusahaan, semakin kecil kemungkinan karyawan untuk keluar.
-- Hal ini menandakan pentingnya strategi retensi untuk karyawan senior dan berpengalaman agar tetap bertahan di perusahaan.
-- Lama bekerja dengan manajer saat ini juga berpengaruh, di mana karyawan yang sudah lama dengan manajer cenderung memiliki risiko
-  attrition yang lebih rendah.
+#### Analisis Kurikulum Tahun Pertama
+- Siswa yang mengikuti dan menyelesaikan unit kurikulum antara 10-15 unit pada tahun pertama lebih banyak ditemukan di kedua kelompok, namun nilai dan tingkat penyelesaian unit sangat membedakan antara graduate dan dropout.
+- Tingkat penyelesaian unit kurikulum pada tahun pertama graduate sangat tinggi (90%), sedangkan dropout sangat rendah (34%).
+- Tingkat unit kurikulum yang disetujui pada tahun pertama pada siswa dropout cenderung lebih sedikit dibandingkan yang graduate.
   
 #### Prediksi Model
 ##### Performa model
-Model yang digunakan menggunakan algoritma Random Forest mneghasilkan akurasi 0.8679, dengan hasil prediksi sebagai berikut: <br>
-![image](https://github.com/user-attachments/assets/a3b1a6b3-50d1-46ac-aafb-a5ad9302cfb0)
+Model yang digunakan menggunakan Model Gradient Boosting mneghasilkan akurasi 90.77%, dengan hasil prediksi sebagai berikut: <br>
+![image](https://github.com/user-attachments/assets/bec89bc7-a7ce-4c87-b05f-4234f3940c74) <br>
 
-##### Contoh tampilan hasil prediksi berdasarkan faktor di prediksi.py
-![image](https://github.com/user-attachments/assets/a2310b82-8a4a-433c-85f1-ee869d4a0be2)
-![image](https://github.com/user-attachments/assets/12893b77-0e0c-4afb-91c3-8e4f9e9d239f)
-![image](https://github.com/user-attachments/assets/8ec26f35-3adf-4afb-8879-d9db8d9c9523)
+Model Gradient Boosting berhasil mengklasifikasikan dengan cukup baik, dengan 237 Dropout dan 422 Graduate yang terdeteksi benar, serta kesalahan prediksi yang relatif kecil, yaitu 40 Dropout salah diklasifikasikan sebagai Graduate dan 27 Graduate salah diklasifikasikan sebagai Dropout.
 
+
+##### Contoh tampilan hasil prediksi berdasarkan faktor di app.py
+- Halaman awal dan header
+![image](https://github.com/user-attachments/assets/f3f666e9-ccf8-48e0-b3a4-5ceeb00f79e4)
+
+- Prediksi siswa yang berstatus enrolled dari dataset:
+  ![image](https://github.com/user-attachments/assets/bc38606d-182e-4c0b-afcc-67c261db6c40) <br>
+
+  Prediksi siswa yang akan dropout berdasarkan dataset data_enrolled.csv
+
+- Prediksi siswa dropout berdasarkan input
+  ![image](https://github.com/user-attachments/assets/f278086a-ba72-4560-8138-3ca7c5e1b2e7) <br>
+  ![image](https://github.com/user-attachments/assets/d9634267-842f-43a6-bb6e-047e21bbaeb8) <br>
+  ![image](https://github.com/user-attachments/assets/bf17e29c-5d39-443c-a352-5776c4c2ab46) <br>
+
+  Prediksi siswa yang akan dropout berdasarkan data dari input pengguna serta rekomendasi aksi lanjutan apabila siswa tersebut terindikasi akan dropout.
+  
 ## Conclusion
 ### Faktor penting
-Beberapa penting yang dihasilkan dari pemodelan:
-- OverTime (Lembur) adalah faktor paling signifikan yang memengaruhi attrition. Karyawan yang sering lembur memiliki risiko keluar yang jauh lebih tinggi, menandakan tekanan kerja yang berkontribusi pada keputusan mereka.
-- MonthlyIncome (Gaji Bulanan) yang rendah, usia muda, dan TotalWorkingYears (lama bekerja secara keseluruhan) yang pendek juga meningkatkan kemungkinan karyawan untuk keluar.
-- Faktor lain seperti YearsAtCompany (lama bekerja di perusahaan saat ini), YearsInCurrentRole (lama di posisi saat ini), dan YearsWithCurrManager (lama bekerja dengan manajer saat ini) juga berpengaruh, meskipun tidak dominan.
-- Distribusi attrition menunjukkan bahwa kelompok usia 25–35 tahun dan karyawan dengan status pernikahan single memiliki tingkat attrition tertinggi (sekitar 54,9%).
-- Posisi dengan tingkat jabatan rendah hingga menengah (Job Level 1 dan 2) serta tingkat kepuasan kerja dan keterlibatan kerja yang rendah juga berkorelasi dengan risiko attrition yang lebih tinggi.
-- Semakin tinggi usia, pendapatan, dan lama bekerja di perusahaan, semakin kecil kemungkinan karyawan keluar, menandakan pentingnya strategi retensi untuk karyawan senior dan berpengalaman.
-
-### Model yang digunakan
-Model yang digunakan ini unggul dalam mengenali karyawan yang tidak keluar (kelas 0) dengan akurasi tinggi, namun masih perlu peningkatan dalam mendeteksi karyawan yang berisiko keluar (kelas 1) karena recall yang relatif rendah. Untuk selanjutnya dapat dilakukan optimisasi model agar menghasilkan model yang lebih akurat.
+Berikut adalah poin-poin penting yang dihasilkan dari analisis data dan pemodelan:
+- Tingkat Penyelesaian Tahun Pertama menjadi indikator penting. Mahasiswa yang menyelesaikan sekitar 90% unit kurikulum tahun pertama berpeluang lulus, sementara mahasiswa yang menyelesaikan sekitar 34% unit cenderung dropout.
+- Rata-rata Nilai Tahun Pertama juga sangat berpengaruh. Mahasiswa dengan nilai tahun pertama tinggi (sekitar 63,35) memiliki peluang lulus yang lebih besar dibandingkan mahasiswa dengan nilai rendah (sekitar 32,89) yang cenderung dropout.
+- Pembayaran Biaya Tepat Waktu adalah faktor yang signifikan yang memengaruhi status mahasiswa. Mahasiswa yang membayar biaya tepat waktu memiliki peluang lebih besar untuk lulus, sedangkan mahasiswa yang terlambat atau tidak membayar tepat waktu cenderung mengalami dropout.
+- Penerima Beasiswa meningkatkan kemungkinan kelulusan. Mahasiswa penerima beasiswa memiliki tingkat kelulusan yang lebih tinggi dibandingkan yang tidak menerima beasiswa.
+- Nilai Masuk juga sedikit berpengaruh, dengan mahasiswa yang lulus memiliki nilai masuk rata-rata lebih tinggi (64,4) dibandingkan yang dropout (62,48).
+- Dari distribusi data, mahasiswa yang membayar tepat waktu dan menerima beasiswa memiliki peluang lebih besar untuk berhasil, sedangkan pembayaran yang terlambat terhubung dengan risiko dropout yang tinggi.
+- Fokus pada tahun pertama sangat penting karena nilai dan penyelesaian tahun pertama menjadi salah satu faktor untuk memprediksi keberhasilan atau kegagalan mahasiswa dalam masa studi mereka.
 
 ### Rekomendasi Action Items 
-Rekomendasi action items untuk mengurangi attrition dan meningkatkan retensi karyawan:
-1. Kurangi Lembur yang Berlebihan <br>
-Karyawan yang sering lembur berisiko lebih tinggi untuk keluar. Perusahaan dapat menawarkan pelatihan manajemen dan efisiensi waktu.
-2. Tinjau Struktur Gaji <br>
-Gaji yang rendah meningkatkan risiko attrition. Pastikan struktur gaji kompetitif dan tambahkan insentif atau bonus untuk meningkatkan kepuasan finansial karyawan. <br>
-3. Tinjau Survei Kepuasan Kerja dan Lingkungan <br>
-Meninjau ulang apakah parameter yang ditanyakan sudah sesuai dengan kerja dan kepuasan karyawan.
-3. Optimalkan Beban Kerja dan Pengembangan Karir <br>
-Seimbangkan beban kerja dan berikan peluang pengembangan serta promosi internal agar karyawan tidak merasa stagnan dan lebih termotivasi untuk bertahan.
-4. Implementasi Model Prediktif untuk Pemantauan  <br>
-Integrasikan model Random Forest ke dalam dashboard HR untuk memantau risiko attrition secara real-time dan memberikan peringatan dini agar tindakan proaktif dapat diambil. Serta terus menerus untuk mengupdate data dan melatih model agar menghasilkan hasil prediksi yang lebih baik.
+Rekomendasi action items untuk mengatasi tingkat dropout dan meningkatkan tingkat kelulusan siswa:
+1. Bantuan Akademik <br>
+Berikan bimbingan belajar tambahan secara intensif bagi siswa dengan nilai rendah atau yang menunjukkan tanda-tanda kesulitan akademis. Sediakan sesi konsultasi akademik rutin untuk membantu siswa merencanakan dan memperbaiki strategi belajarnya. Selain itu, lakukan monitoring progres belajar secara berkala agar setiap kendala akademik dapat segera terdeteksi dan diatasi secara tepat waktu.
+2. Dukungan Finansial <br>
+Tinjau kembali dan perluas kemungkinan pemberian siswa maupun bantuan biaya khususnya bagi siswa yang memiliki kendala finansial. Dukungan finansial ini tidak hanya mengurangi beban ekonomi siswa, tetapi juga dapat meningkatkan motivasi dan fokus mereka dalam menyelesaikan pendidikan. Pastikan proses pengajuan dan pencairan bantuan biaya ini mudah diakses dan tidak berbelit.
+3. Konseling Psikologis <br>
+Sediakan layanan konseling psikologis yang mudah dijangkau untuk siswa yang menghadapi masalah pribadi, stres, atau kehilangan motivasi. Konseling ini bertujuan memberikan dukungan mental dan emosional agar siswa tetap kuat dan termotivasi menghadapi tantangan selama masa pendidikan. Jangan lupa untuk mengedukasi siswa mengenai pentingnya kesehatan mental sebagai bagian dari kesuksesan akademik.
+4. Peningkatan Keterlibatan <br>
+Ajak siswa untuk aktif berpartisipasi dalam berbagai kegiatan kampus seperti organisasi, kelompok studi, maupun kegiatan sosial. Keterlibatan ini dapat memperkuat rasa kebersamaan dan dukungan antar sesama siswa sehingga menciptakan lingkungan belajar yang positif dan menyenangkan. Siswa yang terlibat secara aktif diharapkan cenderung memiliki semangat yang lebih tinggi dan risiko dropout yang lebih rendah.
 
 ### Kesimpulan akhir
-Keseluruhan proyek ini menganalisis dan mengidentifikasi lembur, gaji rendah, usia muda, dan pengalaman kerja yang singkat sebagai faktor utama risiko karyawan keluar. Model Random Forest memberikan prediksi terbaik dengan akurasi tinggi untuk karyawan yang bertahan, namun perlu peningkatan dalam mendeteksi yang berisiko keluar. Rekomendasi utama adalah mengurangi lembur berlebihan, meninjau struktur gaji, mengoptimalkan pengembangan karir, dan mengimplementasikan model prediktif untuk pemantauan risiko attrition secara real-time
+Jaya Jaya Institut  menghadapi tantangan serius dengan tingginya angka siswa yang dropout, yang berdampak negatif pada citra dan efektivitas institusi. Untuk mengatasi hal ini, institusi berfokus pada deteksi dini siswa berisiko melalui analisis data performa dan menyediakan model prediksi serta dashboard interaktif. Faktor utama dropout meliputi aspek akademik dan finansial, sehingga rekomendasi aksi meliputi bantuan belajar, dukungan biaya, layanan konseling, dan peningkatan keterlibatan kampus. Dengan strategi ini, diharapkan tingkat kelulusan meningkat dan angka dropout dapat ditekan secara signifikan.
