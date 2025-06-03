@@ -101,6 +101,7 @@ Beberapa faktor utama yang berpengaruh terhadap dropout siswa adalah:
 - Tingkat unit kurikulum yang disetujui pada tahun pertama pada siswa dropout cenderung lebih sedikit dibandingkan yang graduate.
   
 #### Prediksi Model
+Hasil model prediksi dapat langsung diakses di halaman [Prediksi Dropout Siswa](https://prediksi-dropout-daffaab.streamlit.app/).
 ##### Performa model
 Model yang digunakan menggunakan Model Gradient Boosting mneghasilkan akurasi 90.77%, dengan hasil prediksi sebagai berikut: <br>
 ![image](https://github.com/user-attachments/assets/bec89bc7-a7ce-4c87-b05f-4234f3940c74) <br>
