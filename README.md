@@ -128,13 +128,13 @@ Model Gradient Boosting berhasil mengklasifikasikan dengan cukup baik, dengan 23
 ## Conclusion
 ### Faktor penting
 Berikut adalah poin-poin penting yang dihasilkan dari analisis data dan pemodelan:
-- Tingkat Penyelesaian Tahun Pertama menjadi indikator penting. Mahasiswa yang menyelesaikan sekitar 90% unit kurikulum tahun pertama berpeluang lulus, sementara mahasiswa yang menyelesaikan sekitar 34% unit cenderung dropout.
-- Rata-rata Nilai Tahun Pertama juga sangat berpengaruh. Mahasiswa dengan nilai tahun pertama tinggi (sekitar 63,35) memiliki peluang lulus yang lebih besar dibandingkan mahasiswa dengan nilai rendah (sekitar 32,89) yang cenderung dropout.
-- Pembayaran Biaya Tepat Waktu adalah faktor yang signifikan yang memengaruhi status mahasiswa. Mahasiswa yang membayar biaya tepat waktu memiliki peluang lebih besar untuk lulus, sedangkan mahasiswa yang terlambat atau tidak membayar tepat waktu cenderung mengalami dropout.
-- Penerima Beasiswa meningkatkan kemungkinan kelulusan. Mahasiswa penerima beasiswa memiliki tingkat kelulusan yang lebih tinggi dibandingkan yang tidak menerima beasiswa.
-- Nilai Masuk juga sedikit berpengaruh, dengan mahasiswa yang lulus memiliki nilai masuk rata-rata lebih tinggi (64,4) dibandingkan yang dropout (62,48).
-- Dari distribusi data, mahasiswa yang membayar tepat waktu dan menerima beasiswa memiliki peluang lebih besar untuk berhasil, sedangkan pembayaran yang terlambat terhubung dengan risiko dropout yang tinggi.
-- Fokus pada tahun pertama sangat penting karena nilai dan penyelesaian tahun pertama menjadi salah satu faktor untuk memprediksi keberhasilan atau kegagalan mahasiswa dalam masa studi mereka.
+- Tingkat Penyelesaian Tahun Pertama menjadi indikator penting. Siswa yang menyelesaikan sekitar 90% unit kurikulum tahun pertama berpeluang lulus, sementara siswa yang menyelesaikan sekitar 34% unit cenderung dropout.
+- Rata-rata Nilai Tahun Pertama juga sangat berpengaruh. Siswa dengan nilai tahun pertama tinggi (sekitar 63,35) memiliki peluang lulus yang lebih besar dibandingkan siswa dengan nilai rendah (sekitar 32,89) yang cenderung dropout.
+- Pembayaran Biaya Tepat Waktu adalah faktor yang signifikan yang memengaruhi status siswa. Mahasiswa yang membayar biaya tepat waktu memiliki peluang lebih besar untuk lulus, sedangkan siswa yang terlambat atau tidak membayar tepat waktu cenderung mengalami dropout.
+- Penerima Beasiswa meningkatkan kemungkinan kelulusan. siswa penerima beasiswa memiliki tingkat kelulusan yang lebih tinggi dibandingkan yang tidak menerima beasiswa.
+- Nilai Masuk juga sedikit berpengaruh, dengan siswa yang lulus memiliki nilai masuk rata-rata lebih tinggi (64,4) dibandingkan yang dropout (62,48).
+- Dari distribusi data, siswa yang membayar tepat waktu dan menerima beasiswa memiliki peluang lebih besar untuk graduate, sedangkan pembayaran yang terlambat terhubung dengan risiko dropout yang tinggi.
+- Fokus pada tahun pertama sangat penting karena nilai dan penyelesaian tahun pertama menjadi salah satu faktor untuk memprediksi keberhasilan atau kegagalan siswa dalam masa studi mereka.
 
 ### Rekomendasi Action Items 
 Rekomendasi action items untuk mengatasi tingkat dropout dan meningkatkan tingkat kelulusan siswa:
