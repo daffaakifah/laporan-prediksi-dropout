@@ -4,7 +4,7 @@
 ## Business Understanding
 Jaya Jaya Institut merupakan institusi pendidikan tinggi yang telah berdiri sejak tahun 2000 dan dikenal luas berkat reputasinya dalam mencetak lulusan berkualitas. Namun, di balik prestasi tersebut, institusi ini menghadapi tantangan serius berupa tingginya angka siswa yang tidak menyelesaikan studi alias dropout. Fenomena ini menjadi perhatian utama karena dapat berdampak negatif terhadap citra institusi, efektivitas proses belajar-mengajar, serta efisiensi penggunaan sumber daya.
 
-Tingginya tingkat dropout tidak hanya merugikan institusi, tetapi juga para mahasiswa yang gagal meraih gelar dan masa depan yang lebih baik. Oleh karena itu, Jaya Jaya Institut berupaya untuk mendeteksi secara dini siswa yang berpotensi mengalami dropout. Dengan deteksi dini, institusi dapat memberikan pencegahan, penanganan, dan bimbingan khusus agar siswa tersebut tetap termotivasi dan mampu menyelesaikan pendidikannya.
+Tingginya tingkat dropout tidak hanya merugikan institusi, tetapi juga para siswa yang gagal meraih gelar dan masa depan yang lebih baik. Oleh karena itu, Jaya Jaya Institut berupaya untuk mendeteksi secara dini siswa yang berpotensi mengalami dropout. Dengan deteksi dini, institusi dapat memberikan pencegahan, penanganan, dan bimbingan khusus agar siswa tersebut tetap termotivasi dan mampu menyelesaikan pendidikannya.
 
 Sebagai bagian dari upaya ini, Jaya Jaya Institut menyediakan dataset performa siswa sebagai upaya untuk mendapatkan solusi berbasis data science. Solusi yang diharapkan meliputi pembuatan model prediksi dropout serta dashboard interaktif yang dapat membantu pihak institusi dalam memahami pola data, memonitor performa mahasiswa secara real-time, dan mengambil keputusan berbasis data untuk menekan angka dropout.
 
@@ -35,7 +35,7 @@ Berikut adalah permasalahan bisnis utama yang dihadapi oleh Jaya Jaya Institut d
 
 #### Hasil yang Diharapkan
 1. Pemahaman yang lebih baik tentang faktor-faktor yang mempengaruhi dropout siswa.
-2. Dashboard monitoring yang efektif dan mudah digunakan oleh manajemen dan guru.
+2. Dashboard monitoring yang efektif dan mudah digunakan oleh pihak institusi.
 3. Model prediksi yang dapat membantu mengidentifikasi siswa berisiko tinggi untuk dropout.
 4. Rekomendasi strategis berbasis data untuk meningkatkan tingkat kelulusan dan menurunkan angka dropout.
 
@@ -50,13 +50,13 @@ Dataset yang digunakan dalam proyek ini adalah dataset dari instruksi submission
      requirements.txt yang disediakan dalam proyek. <br>
    - Jalankan seluruh isi notebook.ipynb di Google Colab atau IDE sejenis.
      Ini akan menampilkan hasil analisis data, temuan, pemodelan untuk prediksi data, serta insight yang diperoleh dari eksplorasi dan pemodelan data.
-2. Menjalankan prediction.py <br>
-   - File prediksi.py dapat dijalankan dalam visual studio atau IDE sejenis.
+2. Menjalankan app.py <br>
+   - File app.py dapat dijalankan dalam visual studio atau IDE sejenis.
    - Pastikan semua dependensi sudah terinstal, terutama streamlit. Gunakan perintah berikut untuk instalasi jika belum:
        ```
         pip install -r requirements.txt
         ```
-   - Pastikan file prediksi.py, model.pkl, dan file dataset 'data_enrolled.csv' berada dalam folder/direktori yang sama.
+   - Pastikan file app.py, model.pkl, dan file dataset 'data_enrolled.csv' berada dalam folder/direktori yang sama.
    - Jalankan aplikasi dashboard dengan perintah berikut di terminal atau command prompt:
        ```
        streamlit run app.py
@@ -103,17 +103,17 @@ Model Gradient Boosting berhasil mengklasifikasikan dengan cukup baik, dengan 23
 
 ##### Contoh tampilan hasil prediksi berdasarkan faktor di app.py
 - Halaman awal dan header
-![image](https://github.com/user-attachments/assets/f3f666e9-ccf8-48e0-b3a4-5ceeb00f79e4)
+![image](https://github.com/user-attachments/assets/c4d66a01-ca74-4e1c-8fd6-55aebcb1a85f)
 
-- Prediksi siswa yang berstatus enrolled dari dataset:
-  ![image](https://github.com/user-attachments/assets/bc38606d-182e-4c0b-afcc-67c261db6c40) <br>
+- Prediksi siswa yang berstatus enrolled:
+  ![image](https://github.com/user-attachments/assets/d7b5638a-e69f-4e30-8760-ccb43b495c67) <br>
 
   Prediksi siswa yang akan dropout berdasarkan dataset data_enrolled.csv
 
 - Prediksi siswa dropout berdasarkan input
-  ![image](https://github.com/user-attachments/assets/f278086a-ba72-4560-8138-3ca7c5e1b2e7) <br>
-  ![image](https://github.com/user-attachments/assets/d9634267-842f-43a6-bb6e-047e21bbaeb8) <br>
-  ![image](https://github.com/user-attachments/assets/bf17e29c-5d39-443c-a352-5776c4c2ab46) <br>
+  ![image](https://github.com/user-attachments/assets/c2a074aa-d346-40de-9a9f-8fd91ed9dc34) <br>
+  ![image](https://github.com/user-attachments/assets/3ef3e84a-f186-4226-a8c5-a6dc7e777fdf) <br>
+  ![image](https://github.com/user-attachments/assets/ea986bd0-acad-4425-bac9-0f3f54de9faf) <br>
 
   Prediksi siswa yang akan dropout berdasarkan data dari input pengguna serta rekomendasi aksi lanjutan apabila siswa tersebut terindikasi akan dropout.
   
@@ -140,4 +140,4 @@ Sediakan layanan konseling psikologis yang mudah dijangkau untuk siswa yang meng
 Ajak siswa untuk aktif berpartisipasi dalam berbagai kegiatan kampus seperti organisasi, kelompok studi, maupun kegiatan sosial. Keterlibatan ini dapat memperkuat rasa kebersamaan dan dukungan antar sesama siswa sehingga menciptakan lingkungan belajar yang positif dan menyenangkan. Siswa yang terlibat secara aktif diharapkan cenderung memiliki semangat yang lebih tinggi dan risiko dropout yang lebih rendah.
 
 ### Kesimpulan akhir
-Jaya Jaya Institut  menghadapi tantangan serius dengan tingginya angka siswa yang dropout, yang berdampak negatif pada citra dan efektivitas institusi. Untuk mengatasi hal ini, institusi berfokus pada deteksi dini siswa berisiko melalui analisis data performa dan menyediakan model prediksi serta dashboard interaktif. Faktor utama dropout meliputi aspek akademik dan finansial, sehingga rekomendasi aksi meliputi bantuan belajar, dukungan biaya, layanan konseling, dan peningkatan keterlibatan kampus. Dengan strategi ini, diharapkan tingkat kelulusan meningkat dan angka dropout dapat ditekan secara signifikan.
+Laporan ini dilatarbelakangi oleh Jaya Jaya Institut yang menghadapi tantangan serius dengan tingginya angka siswa yang dropout, yang berdampak negatif pada citra dan efektivitas institusi. Untuk mengatasi hal ini, institusi berfokus pada deteksi dini siswa berisiko melalui analisis data performa dan menyediakan model prediksi serta dashboard interaktif. Dari hasi; analisis ditemukan faktor utama dropout meliputi aspek akademik dan finansial, sehingga rekomendasi aksi meliputi bantuan belajar, dukungan biaya, layanan konseling, dan peningkatan keterlibatan kampus. Dengan strategi ini, diharapkan tingkat kelulusan meningkat dan angka dropout dapat ditekan secara signifikan.
